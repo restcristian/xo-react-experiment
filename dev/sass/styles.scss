@@ -1,0 +1,25 @@
+@import 'mixins';
+body{
+    background-color:pink;
+    p{
+        color:red;
+    }
+}
+
+table{
+    width:500px;
+    height:500px;
+    @include box-sizing(border-box);
+    border:1px solid white;
+    td{
+        border:1px solid white;
+        text-align:center;
+        font-size:4.5em;
+        width:113px;
+        height:113px;
+        color:#fff;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}
